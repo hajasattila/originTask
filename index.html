@@ -11,12 +11,16 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.7/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <!-- Header Start -->
     <header class="h-20 bg-white">
       <!-- Nav Start -->
-      <nav class="relative px-2 py-4">
+      <nav class="relative px-2 py-10">
         <!-- Position: Left -->
         <div class="container mx-auto flex justify-between items-center">
           <span
@@ -30,28 +34,28 @@
             <li>
               <a
                 href="#"
-                class="navbar-item border-b-2 border-transparent transition-colors duration-200 hover:border-yellow-500 hover:text-black"
+                class="navbar-item text-gray-400 border-b-2 border-transparent transition-colors duration-200 hover:border-yellow-500 hover:text-black"
                 >Example</a
               >
             </li>
             <li>
               <a
                 href="#"
-                class="navbar-item border-b-2 border-transparent transition-colors duration-200 hover:border-yellow-500 hover:text-black"
+                class="navbar-item text-gray-400 border-b-2 border-transparent transition-colors duration-200 hover:border-yellow-500 hover:text-black"
                 >Inspiration</a
               >
             </li>
             <li>
               <a
                 href="#"
-                class="navbar-item border-b-2 border-transparent transition-colors duration-200 hover:border-yellow-500 hover:text-black"
+                class="navbar-item text-gray-400 border-b-2 border-transparent transition-colors duration-200 hover:border-yellow-500 hover:text-black"
                 >Tutorials</a
               >
             </li>
             <li>
               <a
                 href="#"
-                class="navbar-item border-b-2 border-transparent transition-colors duration-200 hover:border-yellow-500 hover:text-black"
+                class="navbar-item text-gray-400 border-b-2 border-transparent transition-colors duration-200 hover:border-yellow-500 hover:text-black"
                 >Courses</a
               >
             </li>
@@ -61,21 +65,21 @@
             <li>
               <a
                 href="#"
-                class="navbar-item border-b-2 border-transparent transition-colors duration-200 hover:border-yellow-500 hover:text-black"
+                class="navbar-item text-gray-400 border-b-2 border-transparent transition-colors duration-200 hover:border-yellow-500 hover:text-black"
                 >Fb</a
               >
             </li>
             <li>
               <a
                 href="#"
-                class="navbar-item border-b-2 border-transparent transition-colors duration-200 hover:border-yellow-500 hover:text-black"
+                class="navbar-item text-gray-400 border-b-2 border-transparent transition-colors duration-200 hover:border-yellow-500 hover:text-black"
                 >Tw</a
               >
             </li>
             <li>
               <a
                 href="#"
-                class="navbar-item border-b-2 border-transparent transition-colors duration-200 hover:border-yellow-500 hover:text-black"
+                class="navbar-item text-gray-400 border-b-2 border-transparent transition-colors duration-200 hover:border-yellow-500 hover:text-black"
                 >Ln</a
               >
             </li>
@@ -83,16 +87,17 @@
             <li>
               <a
                 href="#"
-                class="navbar-item border-b-2 border-transparent transition-colors duration-200 hover:border-yellow-500 hover:text-black"
+                class="navbar-item text-gray-400 border-b-2 border-transparent transition-colors duration-200 hover:border-yellow-500 hover:text-black"
                 ><i class="fa fa-search" aria-hidden="true"></i
               ></a>
             </li>
           </ul>
 
           <!-- Hamburger Start -->
-          <button id="mobile-icon" class="md:hidden">
-            <i onclick="changeIcon(this)" class="fa-solid fa-bars"></i>
+          <button id="mobile-icon" class="md:hidden w-12 h-12">
+            <i onclick="changeIcon(this)" class="fa-solid fa-bars text-2xl"></i>
           </button>
+
           <!-- Hamburger End -->
         </div>
 
@@ -136,16 +141,44 @@
         <!-- Ide kerülnek az API által visszaadott adatok -->
       </div>
     </div>
-    <div class="text-center mt-2 flex flex-col justify-center items-center z-50">
-      <p id="photo-description" class="z-1 text-white font-bold text-xl text-shadow-black overflow-hidden line-clamp-2"></p>
-      <p id="photo-count" class="z-1 text-white font-bold text-xl text-shadow-black"></p>
+    <div
+      class="text-center mt-2 flex flex-col justify-center items-center z-50"
+    >
+      <p
+        id="photo-description"
+        class="z-1 text-white font-bold text-xl text-shadow-black overflow-hidden line-clamp-2"
+      ></p>
+      <p
+        id="photo-count"
+        class="z-1 text-white font-bold text-xl text-shadow-black"
+      ></p>
     </div>
     <!-- Carousels End -->
 
-    
+    <!-- Categories Start -->
+
+    <div class="max-w-screen-2xl mx-auto relative z-10 mt-16">
+      <h1
+        class="text-black text-3xl lg:text-left lg:text-4xl font-extrabold text-center"
+      >
+        Design is not just what it looks like <br />and feels like.
+      </h1>
+    </div>
+    <!-- Categories End -->
+
+    <!-- Card Start -->
+    <div class="container mx-auto mt-10">
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+        <!-- Itt jeleníthetjük meg a termékeket -->
+      </div>
+    </div>
+
+    <!-- Card End -->
+
     <!-- Scripts Start -->
     <script src="Assets/js/hamburger.js"></script>
     <script src="Assets/js/carosuel.js"></script>
+    <script src="Assets/js/cards.js"></script>
     <!-- Scripts End -->
   </body>
 </html>
