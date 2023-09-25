@@ -1,17 +1,17 @@
 // Hónapok tömbje
 const months = [
-  "jan",
-  "feb",
-  "marc",
-  "ápr",
-  "máj",
-  "jún",
-  "júl",
-  "aug",
-  "szept",
-  "okt",
-  "nov",
-  "dec",
+  "Jan",
+  "Feb",
+  "Mar",
+  "Apr",
+  "May",
+  "Jun",
+  "Jul",
+  "Aug",
+  "Sep",
+  "Okt",
+  "Nov",
+  "Dec",
 ];
 
 // Az API hívása és adatok megjelenítése
@@ -36,13 +36,13 @@ fetch("https://api.slingacademy.com/v1/sample-data/products")
       const productElement = document.createElement("div");
       productElement.classList.add("p-4", "bg-white", "rounded"); // Keret eltávolítva
       productElement.innerHTML = `
-                 <div class="bg-white p-4 rounded">
+                 <div class="bg-white rounded">
                      <img src="${product.photo_url}" alt="${product.name}" class="w-full h-auto">
-                     <p class="text-gray-500 mt-2">${formattedDate}</p> <!-- Szürke szín -->
+                     <p class="text-gray-500 mt-2">${formattedDate}</p>
                      <p class="text-xl font-semibold mt-2">${product.name}</p>
-                     <p class="text-blue-500 mt-2">${product.category}</p>
                  </div>
              `;
+      /* <p class="text-blue-500 mt-2">${product.category}</p> */
       container.appendChild(productElement);
     });
 
