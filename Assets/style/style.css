@@ -1,3 +1,4 @@
+/* Alapok */
 html,
 body {
   margin: 0px;
@@ -5,6 +6,7 @@ body {
   background-color: white !important;
 }
 
+/* Telefon */
 .mobile-menu {
   left: -200%;
   transition: 0.5s;
@@ -23,6 +25,7 @@ body {
   display: block;
 }
 
+/* Img Slider */
 .carousel {
   position: relative;
   box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.64);
@@ -42,7 +45,7 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  height: auto; /* Képmagasság arányos méretezéshez */
+  height: auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -50,18 +53,10 @@ body {
 
 .carousel-item img {
   max-width: 100%;
-  max-height: 100%; /* A képmagasság maximális mérete 100% */
+  max-height: 100%;
   width: auto;
   height: auto;
 }
 .text-shadow-black {
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 1);
-}
-.line-clamp-2 {
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  -webkit-line-clamp: 2; /* Megadhatod a kívánt sorok számát */
-  max-height: 2.5em; /* A kívánt magasság a két sorhoz */
 }

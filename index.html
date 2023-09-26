@@ -117,20 +117,18 @@
           <div id="mobileCategories" class="relative">
             <button onclick="toggleMobileCategories()" class="flex items-center text-gray-400 hover:text-black focus:text-black focus:outline-none">Categories <i class="fa fa-chevron-down ml-1"></i></button>
             <ul id="mobileCategoryList" class="hidden absolute right-0 mt-2 py-2 bg-white shadow-lg rounded w-48">
-              <li class="px-4 py-2"><a href="#">All</a></li>
-              <li class="px-4 py-2"><a href="#">Modern</a></li>
-              <li class="px-4 py-2"><a href="#">Psychics</a></li>
+              <!-- Itt jelennek meg a kategóriák mobil nézeten -->
             </ul>
           </div>
         </div>
         <!-- nagyobb képernyőn -->
-        <ul class="hidden lg:flex space-x-4">
-          <li class="mb-1"><a href="#">All</a></li>
-          <li class="mb-1"><a href="#">Modern</a></li>
-          <li class="mb-1"><a href="#">Psychics</a></li>
+        <ul class="hidden lg:flex space-x-4" id="categoryList">
+          <!-- Itt jelennek meg a kategóriák gép nézeten -->
         </ul>
       </div>
     </div>
+    <!-- Categories End -->
+
     <!-- Categories End -->
 
     <!-- Card Start -->
@@ -140,6 +138,10 @@
       </div>
     </div>
     <!-- Card End -->
+
+    <div class="max-w-screen-2xl mx-auto relative z-10 mt-16 flex items-center justify-between">
+      <h1 class="text-black text-3xl lg:text-left lg:text-4xl font-extrabold text-center">Trending</h1>
+    </div>
 
     <!-- Scripts Start -->
     <script src="Assets/js/hamburger.js"></script>
